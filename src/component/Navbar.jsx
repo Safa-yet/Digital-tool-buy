@@ -46,9 +46,11 @@ const Navbar = ({clickedProduct}) => {
               className="menu menu-md dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font-semibold text-3xl"
             >
               {navlinks}
+            <button className="btn rounded-full">Login</button>
+          <a className="btn rounded-full linear text-white">Get Started</a>
             </ul>
           </div>
-          <a className="font-bold text-4xl linear bg-clip-text text-transparent">
+          <a className="font-bold text-2xl md:text-4xl linear bg-clip-text text-transparent">
             DigiTools
           </a>
         </div>
@@ -65,8 +67,8 @@ const Navbar = ({clickedProduct}) => {
               <p>{clickedProduct.length}</p>
             </div>
           </div>
-          <button>Login</button>
-          <a className="btn rounded-full linear text-white">Get Started</a>
+          <button className="hidden md:flex">Login</button>
+          <a className="btn rounded-full linear text-white hidden md:flex">Get Started</a>
         </div>
       </div>
     </div>
