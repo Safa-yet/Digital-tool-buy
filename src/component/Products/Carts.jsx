@@ -1,5 +1,6 @@
 import { X } from "lucide-react";
 import React from "react";
+import { toast } from "react-toastify";
 
 const Carts = ({ clickedProduct, setChilckedProduct }) => {
   let total = clickedProduct.reduce((sum, add) => sum + Number(add.price), 0);
@@ -7,6 +8,7 @@ const Carts = ({ clickedProduct, setChilckedProduct }) => {
   let deleteCart = (e) => {
     let filterCart = clickedProduct.filter((i) => i.name !== e.name);
     setChilckedProduct(filterCart);
+    toast("Remove Successfull")
   };
   return (
     <div className="space-y-8 shadow-2xl p-7 rounded-2xl">

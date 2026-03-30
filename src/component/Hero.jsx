@@ -2,6 +2,7 @@ import React from "react";
 
 import banner from "../assets/banner.png";
 import dot from '../assets/Group 5.png'
+import play from "../assets/Play.png"
 import { Play } from "lucide-react";
 import Button from "./Common/Button";
 const Hero = () => {
@@ -21,7 +22,7 @@ const Hero = () => {
             </p>
             <div className=" flex gap-4">
             <Button btn='Explore Products'></Button>
-            <button className=" btn btn-lg btn-outline btn-primary rounded-full"><Play></Play> Watch Demo</button>
+            <button className=" btn btn-outline btn-primary rounded-full"><img src={play} alt="" /> Watch Demo</button>
 
             </div>
           </div>

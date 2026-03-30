@@ -3,7 +3,7 @@ import Button from './Common/Button';
 
 const Workflow = () => {
     return (
-        <div className="footer py-22 footer-horizontal footer-center bg-primary text-primary-content">
+        <div className="footer py-22 footer-horizontal footer-center linear text-primary-content">
             
 
   <aside>
@@ -17,10 +17,10 @@ const Workflow = () => {
   </aside>
   
   <div className='flex'>
-    <Button className=" btn btn-lg rounded-full" ></Button>
-    <Button className='btn btn-lg btn-outline rounded-full'></Button>
+    <Button className=" btn rounded-full" btn='Explore Products' ></Button>
+    <Button className='btn btn-outline rounded-full' btn="View Pricing"></Button>
   </div>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+    <p>14-day free trial • No credit card required • Cancel anytime</p>
 
         </div>
     );

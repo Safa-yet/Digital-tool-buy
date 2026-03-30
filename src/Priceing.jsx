@@ -60,7 +60,7 @@ const Priceing = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8  items-stretch">
         {data.map((item) => {
             return <>
-            <div className="space-y-4  rounded-4xl hover:scale-110 pricingBox py-6 px-5 group shadow-2xl relative">
+            <div className="space-y-4  rounded-4xl hover:scale-110 pricingBox py-6 px-5 group shadow-2xl relative flex flex-col justify-between">
                 <div>
 
                 <h1 className="text-2xl font-bold">{item.name}</h1>
@@ -69,7 +69,7 @@ const Priceing = () => {
                 <h3 ><span className="text-3xl font-bold">{item.price}</span><span className="text-sec group-hover:text-white">monthly</span></h3>
                 <ul className="space-y-1.5">
                     {
-                        item.features.map(i=><li className="flex"><Check className="text-green-500"></Check><span className="text-sec group-hover:text-white">{i}</span></li>)
+                        item.features.map(i=><li className="flex"><Check className="text-green-500 group-hover:text-white"></Check><span className="text-sec group-hover:text-white">{i}</span></li>)
                     }
                 </ul>
                 <button className="pricingBtn">Get Started</button>

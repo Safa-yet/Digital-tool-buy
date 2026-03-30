@@ -21,15 +21,16 @@ let data = [
     bio: "Download and start using your premium tools immediately."
   }
 ];
-const StepSec = () => {
+let StepSec = () => {
   return (
     <div className="container mb-32">
       <HeadLine  h1="Get Started in 3 Steps" p="Start using premium digital tools in minutes, not hours." ></HeadLine>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-4">
-        {data.map((item) => {
+        {
+        data.map((item) => {
           return (
-            <>
+            
               <div key={item.id} className="text-center shadow-2xl rounded-2xl  py-5 px-8 relative hover:scale-105 duration-300">
 
                 <img
@@ -44,7 +45,6 @@ const StepSec = () => {
                 <p className='p-1 '>{item.id}</p>
                 </div>
               </div>
-            </>
           );
         })}
       </div>
