@@ -7,6 +7,8 @@ import Rating from './component/Rating'
 import './index.css'
 import Products from './Products'
 import { useState } from 'react'
+import StepSec from './component/StepSec'
+import Priceing from './Priceing'
 
 
 function App() {
@@ -18,6 +20,9 @@ function App() {
     <Hero></Hero>
     <Rating></Rating>
     <Products clickedProduct={clickedProduct} setChilckedProduct={setChilckedProduct}></Products>
+
+    <StepSec></StepSec>
+    <Priceing></Priceing>
 
 
 

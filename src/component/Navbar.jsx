@@ -1,5 +1,6 @@
 import { ShoppingCart } from "lucide-react";
 import React from "react";
+import Button from "./Common/Button";
 
 const Navbar = ({clickedProduct}) => {
   const navItems = [

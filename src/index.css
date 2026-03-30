@@ -29,3 +29,17 @@
   @apply
   bg-linear-to-r from-[#4F39F6] to-[#9514FA]
 }
+
+.pricingBox{
+  @apply
+  hover:bg-linear-to-r
+   from-[#4F39F6] to-[#9514FA]
+   hover:text-white duration-300
+}
+
+.pricingBtn{
+  @apply
+btn w-full rounded-full text-white 
+  bg-gradient-to-r from-[#4F39F6] to-[#9514FA]
+  group-hover:bg-none group-hover:bg-white group-hover:text-black duration-300
+}
