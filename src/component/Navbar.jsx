@@ -1,7 +1,7 @@
 import { ShoppingCart } from "lucide-react";
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({clickedProduct}) => {
   const navItems = [
     { id: 1, name: "Products", path: "/products" },
     { id: 2, name: "Features", path: "/features" },
@@ -18,7 +18,9 @@ const Navbar = () => {
     );
   });
   return (
-    <div className="container">
+    <div className="sticky top-0 z-10 bg-white">
+
+    <div className="container ">
       <div className="navbar bg-base-100 ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -60,13 +62,14 @@ const Navbar = () => {
           <div className="relative">
             <ShoppingCart></ShoppingCart>
             <div className="absolute -top-3 -right-3 flex items-center justify-center w-5 h-5 bg-red-600 p-1 rounded-full text-xs text-white">
-              <p>0</p>
+              <p>{clickedProduct.length}</p>
             </div>
           </div>
           <button>Login</button>
           <a className="btn rounded-full linear text-white">Get Started</a>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -6,17 +6,18 @@ import Navbar from './component/Navbar'
 import Rating from './component/Rating'
 import './index.css'
 import Products from './Products'
+import { useState } from 'react'
 
 
 function App() {
- 
+  let [clickedProduct,setChilckedProduct]=useState([])
 
   return (
     <>
-    <Navbar></Navbar>
+    <Navbar clickedProduct={clickedProduct} ></Navbar>
     <Hero></Hero>
     <Rating></Rating>
-    <Products></Products>
+    <Products clickedProduct={clickedProduct} setChilckedProduct={setChilckedProduct}></Products>
 
 
 

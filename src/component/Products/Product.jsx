@@ -9,6 +9,10 @@ const Product = ({item,clickedProduct,setChilckedProduct}) => {
 
     let btnHandle = (e)=>{
 
+        // let filterProduct = item.filter(i=>i.name !== e.name);
+
+
+
         setChilckedProduct([...clickedProduct,e])
         
 
@@ -21,7 +25,7 @@ const Product = ({item,clickedProduct,setChilckedProduct}) => {
             <img src={item.icon} alt="" />
             <h1 className='text-2xl font-bold'>{item.name}</h1>
             <p className='text-sec'>{item.description}</p>
-            <h3><span className='text-2xl font-bold'>{item.price}</span>{item.period}</h3>
+            <h3><span className='text-2xl font-bold'>${item.price}/</span>{item.period}</h3>
             <ul>
                 {item.features.map(li=>{
                     return(
