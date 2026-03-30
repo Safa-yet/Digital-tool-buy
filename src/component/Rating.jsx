@@ -1,0 +1,28 @@
+import React from 'react';
+
+const Rating = () => {
+    const stats = [
+  { id: 1, number: "50K+", label: "Active Users" },
+  { id: 2, number: "120+", label: "Premium Tools" },
+  { id: 3, number: "99%", label: "Customer Satisfaction" },
+];
+    return (
+        <div className='flex justify-center  linear py-10'>
+           {
+            stats.map((star)=>{
+                return(
+                    <>
+                    <div className='text-center text-white px-20  border-e-2'>
+                        <h1 className='text-5xl font-bold'>{star.number}</h1>
+                        <p className=' mt-4'>{star.label}</p>
+                    </div>
+                    </>
+                )
+            })
+           }
+
+        </div>
+    );
+};
+
+export default Rating;
