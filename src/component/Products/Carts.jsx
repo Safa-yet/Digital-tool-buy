@@ -12,6 +12,12 @@ const Carts = ({ clickedProduct, setChilckedProduct }) => {
   return (
     <div className="space-y-8">
       <h1 className="text-4xl font-bold">Your Cart</h1>
+      {
+        clickedProduct.length === 0 && <>
+        <div className="py-12 text-center">
+            <h1 className="text-3xl text-sec">Cart is empty</h1>
+            </div></>
+      }
 
       <div className="space-y-3">
         {clickedProduct.map((item) => {
@@ -30,15 +36,17 @@ const Carts = ({ clickedProduct, setChilckedProduct }) => {
                   Remove <X></X>
                 </p>
               </div>
+              <div className="flex justify-between py-8 px-4 rounded-2xl text-4xl items-center font-semibold ">
+      <h1>Total</h1>
+      <p>${total}</p>
+      </div>
             </>
           );
         })}
       </div>
       
-      <div className="flex justify-between py-8 px-4 rounded-2xl text-4xl items-center font-semibold text-white linear">
-      <h1>Total</h1>
-      <p>${total}</p>
-      </div>
+      
+      <button onClick={()=>setChilckedProduct([])} className="btn btn-lg text-white w-full rounded-full linear">Process to CheckOut</button>
     </div>
   );
 };
