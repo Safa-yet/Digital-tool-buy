@@ -9,13 +9,13 @@ const Product = ({item,clickedProduct,setChilckedProduct}) => {
 
     let btnHandle = (e)=>{
 
-        // let filterProduct = item.filter(i=>i.name !== e.name);
+        let isFound = clickedProduct.find((i)=>i.name === e.name)
 
-
-
+        if (isFound){
+            alert("already Found")
+            return
+        }
         setChilckedProduct([...clickedProduct,e])
-        
-
         setBuy(false)
     }
 

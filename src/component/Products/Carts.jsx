@@ -1,9 +1,14 @@
 import { X } from "lucide-react";
 import React from "react";
 
-const Carts = ({ clickedProduct, setChilckedProduc }) => {
+const Carts = ({ clickedProduct, setChilckedProduct }) => {
 
     let total = clickedProduct.reduce((sum,add)=>sum+Number(add.price),0)
+
+    let deleteCart= (e)=>{
+        let filterCart= clickedProduct.filter((i)=>i.name !== e.name)
+        setChilckedProduct(filterCart)
+    }
   return (
     <div className="space-y-8">
       <h1 className="text-4xl font-bold">Your Cart</h1>
@@ -21,7 +26,7 @@ const Carts = ({ clickedProduct, setChilckedProduc }) => {
                     {item.period}
                   </h3>
                 </div>
-                <p className="hover:text-primary flex hover:font-bold cursor-pointer duration-300 ">
+                <p onClick={()=>deleteCart(item)} className="hover:text-primary flex hover:font-bold cursor-pointer duration-300 ">
                   Remove <X></X>
                 </p>
               </div>
