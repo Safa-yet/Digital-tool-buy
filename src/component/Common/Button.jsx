@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Button = ({btn="Get Started",className="text-white linear btn btn-lg  rounded-full"}) => {
+const Button = ({btn="Get Started",className="text-white linear"}) => {
     return (
         <div>
-            <button className={className}>{btn}</button>
+            <button className={`${className} btn btn-lg  rounded-full `}>{btn}</button>
         </div>
     );
 };

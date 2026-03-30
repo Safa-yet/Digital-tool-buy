@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": "$29/",
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "SEO optimization", "Export to PDF"],
+    "icon": "https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/edit-3.svg"
+  },
+  {
+    "id": 2,
+    "name": "Design Master AI",
+    "description": "Create stunning graphics, UI designs, and social media posts instantly.",
+    "price": "$49/",
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Auto design", "Figma export", "Brand kits"],
+    "icon": "https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/pen-tool.svg"
+  },
+  {
+    "id": 3,
+    "name": "CodeGen AI",
+    "description": "Generate clean and efficient code for web and mobile apps.",
+    "price": "$59/",
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Multi-language support", "Bug fixing", "Code explanation"],
+    "icon": "https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/code.svg"
+  },
+  {
+    "id": 4,
+    "name": "Video AI Studio",
+    "description": "Edit and generate videos automatically with AI-powered tools.",
+    "price": "$79/",
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Auto subtitles", "Transitions", "4K export"],
+    "icon": "https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/video.svg"
+  },
+  {
+    "id": 5,
+    "name": "VoiceGen AI",
+    "description": "Convert text into realistic human-like voiceovers.",
+    "price": "$19/",
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Multiple voices", "Language support", "MP3 download"],
+    "icon": "https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/mic.svg"
+  },
+  {
+    "id": 6,
+    "name": "SEO Booster",
+    "description": "Optimize your website content to rank higher on search engines.",
+    "price": "$39/",
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Keyword research", "On-page SEO", "Analytics"],
+    "icon": "https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/trending-up.svg"
+  },
+  {
+    "id": 7,
+    "name": "Resume Builder AI",
+    "description": "Create professional resumes and CVs in minutes.",
+    "price": "$15",
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["ATS friendly", "Templates", "PDF export"],
+    "icon": "https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/file-text.svg"
+  },
+  {
+    "id": 8,
+    "name": "Chatbot AI Pro",
+    "description": "Build smart AI chatbots for websites and apps.",
+    "price": "$69/",
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Custom training", "API integration", "24/7 support"],
+    "icon": "https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/message-circle.svg"
+  },
+  {
+    "id": 9,
+    "name": "Image Enhancer AI",
+    "description": "Enhance and upscale images with AI precision.",
+    "price": "$25/",
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["HD upscale", "Noise removal", "Batch processing"],
+    "icon": "https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/image.svg"
+  },
+  {
+    "id": 10,
+    "name": "Productivity Suite AI",
+    "description": "All-in-one productivity tools to manage tasks and workflows.",
+    "price": "$99/",
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Task manager", "Calendar sync", "Team collaboration"],
+    "icon": "https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/layout-dashboard.svg"
+  }
+]

@@ -3,9 +3,9 @@ import Button from './Common/Button';
 
 const Workflow = () => {
     return (
-        <div className=''>
+        <div className="footer py-22 footer-horizontal footer-center bg-primary text-primary-content">
             
-            <footer className="footer py-22 footer-horizontal footer-center bg-primary text-primary-content">
+
   <aside>
     <h1 className="text-5xl font-bold">
         Ready to Transform Your Workflow?
@@ -21,7 +21,7 @@ const Workflow = () => {
     <Button className='btn btn-lg btn-outline rounded-full'></Button>
   </div>
     <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-</footer>
+
         </div>
     );
 };
