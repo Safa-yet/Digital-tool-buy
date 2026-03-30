@@ -9,6 +9,7 @@ import Products from './Products'
 import { useState } from 'react'
 import StepSec from './component/StepSec'
 import Priceing from './Priceing'
+import Footer from './Footer'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
 
 
     <Workflow></Workflow>
+    <Footer></Footer>
     </>
   )
 }

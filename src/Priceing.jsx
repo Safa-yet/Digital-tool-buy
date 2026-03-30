@@ -57,7 +57,7 @@ const Priceing = () => {
         p="Choose the plan that fits your needs. Upgrade or downgrade anytime."
       ></HeadLine>
 
-      <div className="grid grid-cols-3 gap-8  items-stretch">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8  items-stretch">
         {data.map((item) => {
             return <>
             <div className="space-y-4  rounded-4xl hover:scale-110 pricingBox py-6 px-5 group shadow-2xl relative">
