@@ -57,24 +57,25 @@ const Priceing = () => {
         p="Choose the plan that fits your needs. Upgrade or downgrade anytime."
       ></HeadLine>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8  items-stretch">
-        {data.map((item) => {
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12  items-stretch">
+        {data.map((item,index) => {
+          let activeCard = index ===1;
             return <>
-            <div className="space-y-4  rounded-4xl hover:scale-110 pricingBox py-6 px-5 group shadow-2xl relative flex flex-col justify-between">
+            <div className={`space-y-4 ${activeCard && 'scale-110 text-white linear '}  rounded-4xl hover:scale-110 pricingBox py-6 px-5 group shadow-2xl relative flex flex-col justify-between`}>
                 <div>
 
                 <h1 className="text-2xl font-bold">{item.name}</h1>
-                <p className="text-sec group-hover:text-white my-1">{item.tag}</p>
+                <p className={`text-sec ${activeCard&& "text-white"}  group-hover:text-white my-1`}>{item.tag}</p>
                 </div>
-                <h3 ><span className="text-3xl font-bold">{item.price}</span><span className="text-sec group-hover:text-white">monthly</span></h3>
+                <h3 ><span className="text-3xl font-bold">{item.price}</span><span className={`${activeCard&& "text-white"} text-sec group-hover:text-white`}>monthly</span></h3>
                 <ul className="space-y-1.5">
                     {
-                        item.features.map(i=><li className="flex"><Check className="text-green-500 group-hover:text-white"></Check><span className="text-sec group-hover:text-white">{i}</span></li>)
+                        item.features.map(i=><li className="flex text-sm"><Check className={`${activeCard&& "text-white"}  text-green-500 group-hover:text-white`}></Check><span className={`${activeCard&& "text-white"} text-sec group-hover:text-white`}>{i}</span></li>)
                     }
                 </ul>
-                <button className="pricingBtn">Get Started</button>
+                <button className='pricingBtn'>Get Started</button>
 
-                <div className="top-0 left-1/2 -translate-x-1/2 -translate-y-1/2  hidden group-hover:block absolute">
+                <div className={`${activeCard && "!block"} top-0 left-1/2 -translate-x-1/2 -translate-y-1/2  hidden group-hover:block absolute`}>
                     <p className="py-.5 px-3 bg-[#FEF3C6] text-[#BB4D00] rounded-4xl">{item.tagType}</p>
                 </div>
 

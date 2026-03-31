@@ -17,14 +17,14 @@ const Product = ({item,clickedProduct,setChilckedProduct}) => {
             return
         }
         setChilckedProduct([...clickedProduct,e])
-        toast.success('✔ Purchased')
+        toast.success('✔ Added to Cart')
         
         setBuy(false)
     }
 
     return (
         
-        <div className=' px-5 lg:py-7 space-y-3 relative rounded-4xl bg-amber-50 shadow-2xl  duration-500 flex-col justify-between flex'>
+        <div className=' px-5 lg:py-7 space-y-3 relative rounded-4xl bg-amber-50 shadow-lg  duration-500 flex-col justify-between flex hover:-translate-y-1.5'>
             <img className='w-10' src={item.icon} alt="" />
             <div>
             <h1 className='text-2xl font-bold'>{item.name}</h1>
@@ -40,7 +40,7 @@ const Product = ({item,clickedProduct,setChilckedProduct}) => {
                     )
                 })}
             </ul>
-            <button className={`w-full ${buy?"linear text-white": "bg-green-400 text-black"}  btn  rounded-full duration-300`} onClick={()=>btnHandle(item)} >{buy?"Buy Now": "✔ Purchased" }</button>
+            <button className={`w-full ${buy?"linear text-white": "bg-green-400 text-black"}  btn  rounded-full duration-300`} onClick={()=>btnHandle(item)} >{buy?"Buy Now": "✔ Added to Cart" }</button>
             <div className={`absolute top-5 right-5  py-1.5 px-3 capitalize text-xs rounded-full ${item.tag=='popular'? 'bg-purple-300 text-purple-700': item.tag=='best seller'?'bg-pink-200 text-pink-700': 'bg-green-100 text-green-700'} `}>
                 <p>{item.tag}</p>
             </div>

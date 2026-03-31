@@ -13,7 +13,7 @@ const Rating = () => {
                 return(
                     <>
                     <div className='text-center text-white px-20  md:border-e-2'>
-                        <h1 className='text-5xl font-bold'>{star.number}</h1>
+                        <h1 className='text-4xl md:text-5xl font-bold'>{star.number}</h1>
                         <p className=' mt-4'>{star.label}</p>
                     </div>
                     </>

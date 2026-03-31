@@ -7,7 +7,7 @@ const Workflow = () => {
             
 
   <aside>
-    <h1 className="text-5xl font-bold">
+    <h1 className="text-3xl md:text-5xl font-bold">
         Ready to Transform Your Workflow?
     </h1>
     <p >
