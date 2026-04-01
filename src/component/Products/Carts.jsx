@@ -62,7 +62,7 @@ const Carts = ({ clickedProduct, setChilckedProduct }) => {
       </div>
 
       <button
-        onClick={() => setChilckedProduct([])}
+        onClick={() =>{  setChilckedProduct([]); toast.warning("Cart is Empty")   } }
         className="btn btn-lg text-white w-full rounded-full linear"
       >
         Process to CheckOut

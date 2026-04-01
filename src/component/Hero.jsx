@@ -2,7 +2,7 @@ import React from "react";
 
 import banner from "../assets/banner.png";
 import dot from '../assets/Group 5.png'
-import play from "../assets/Play.png"
+import play from "/Play.png"
 import { Play } from "lucide-react";
 import Button from "./Common/Button";
 const Hero = () => {

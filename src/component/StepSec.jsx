@@ -4,19 +4,19 @@ import HeadLine from "./Common/HeadLine";
 let data = [
   {
     id: 1,
-    img: "src/assets/user.png",
+    img: "/user.png",
     name: "Create Account",
     bio: "Sign up for free in seconds. No credit card required to get started.",
   },
   {
     id: 2,
-    img: "src/assets/package.png",
+    img: "/package.png",
     name: "Choose Products",
     bio: "Browse our catalog and select the tools that fit your needs."
   },
   {
     id: 3,
-    img: "src/assets/rocket.png",
+    img: "/rocket.png",
     name: "Start Creating",
     bio: "Download and start using your premium tools immediately."
   }
