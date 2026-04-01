@@ -61,7 +61,11 @@ const Navbar = ({clickedProduct}) => {
           </ul>
         </div>
         <div className="navbar-end gap-4 font-semibold">
+
+          
             {/* Shoping Cart */}
+
+
           <div className="relative">
             <ShoppingCart></ShoppingCart>
             <div className="absolute -top-3 -right-3 flex items-center justify-center w-5 h-5 bg-red-600 p-1 rounded-full text-xs text-white">
